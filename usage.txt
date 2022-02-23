@@ -1,3 +1,5 @@
 Use the following two statement to launch the file, and for noetic, you should type the Rviz base frame as "//camera_init"
 roslaunch livox_mapping mapping_mid.launch
 roslaunch livox_ros_driver livox_lidar.launch
+
+To record the whole map, please substitute the parameter laserCloudValidNum by laserCloudSurroundNum on line 716, 717, 718 under livox_mapping/src/laserMapping.cpp

@@ -713,8 +713,8 @@ int main(int argc, char** argv)
 
             laserCloudCornerFromMap->clear();
             laserCloudSurfFromMap->clear();
-            
-            for (int i = 0; i < laserCloudValidNum; i++) {
+            // laserCloudValidNum
+            for (int i = 0; i < laserCloudSurroundNum; i++) { 
                 *laserCloudCornerFromMap += *laserCloudCornerArray[laserCloudValidInd[i]];
                 *laserCloudSurfFromMap += *laserCloudSurfArray[laserCloudValidInd[i]];
             }
